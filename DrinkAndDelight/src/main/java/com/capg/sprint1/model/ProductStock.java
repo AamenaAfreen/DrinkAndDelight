@@ -16,6 +16,8 @@ public class ProductStock {
 	Date expirydate;
 	String qualityCheck;
 	Date processDate;
+	String exitDate;
+	
 	
 	public ProductStock() {
 		super();
@@ -23,7 +25,7 @@ public class ProductStock {
 
 	public ProductStock(String orderId, String name, double pricePerUnit, double quantityValue, double quantityUnit,
 			double price, String warehouseId, Date deliveryDate, Date manufactureDate, Date expirydate,
-			String qualityCheck, Date processDate) {
+			String qualityCheck, Date processDate,String exitDate) {
 		super();
 		this.orderId = orderId;
 		this.name = name;
@@ -37,6 +39,7 @@ public class ProductStock {
 		this.expirydate = expirydate;
 		this.qualityCheck = qualityCheck;
 		this.processDate = processDate;
+		this.exitDate = exitDate;
 	}
 
 	public String getOrderId() {
@@ -134,6 +137,13 @@ public class ProductStock {
 	public void setProcessDate(Date processDate) {
 		this.processDate = processDate;
 	}
+	public String getexitDate() {
+		return exitDate;
+	}
+
+	public void setexitDate(String exitDate) {
+		this.exitDate = exitDate;
+	}
 
 	@Override
 	public String toString() {
@@ -141,7 +151,7 @@ public class ProductStock {
 				+ ", quantityValue=" + quantityValue + ", quantityUnit=" + quantityUnit + ", price=" + price
 				+ ", warehouseId=" + warehouseId + ", deliveryDate=" + deliveryDate + ", manufactureDate="
 				+ manufactureDate + ", expirydate=" + expirydate + ", qualityCheck=" + qualityCheck + ", processDate="
-				+ processDate + "]";
+				+ processDate + ",exitDate=" + exitDate +"]";
 	}
 	
 	

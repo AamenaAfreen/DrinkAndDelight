@@ -11,7 +11,9 @@ public class Main1 {
 		
 		Scanner in=new Scanner(System.in);
 		System.out.println("Enter Supplier Id");
-		String supplierId=in.nextLine();
+		String OrderIdOfProduct=in.nextLine();
+		System.out.println("Enter Exit date");
+		String ExitDateOfProduct=in.nextLine();
 		
 		supplierDetailsServiceImplObj.displaySupplierDetails(supplierId);
 	}
